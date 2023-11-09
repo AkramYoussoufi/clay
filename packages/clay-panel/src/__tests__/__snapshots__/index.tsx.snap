@@ -4,7 +4,7 @@ exports[`ClayPanel renders 1`] = `
 <div>
   <div
     class="panel"
-    role="tablist"
+    role="region"
   >
     <div
       class="panel-header"
@@ -38,12 +38,12 @@ exports[`ClayPanel renders with custom displayTitle 1`] = `
 <div>
   <div
     class="panel panel-secondary"
-    role="tablist"
+    role="region"
   >
     <button
       aria-expanded="false"
       class="panel-header panel-header-link collapse-icon collapse-icon-middle collapsed btn btn-unstyled"
-      role="tab"
+      role="button"
       type="button"
     >
       <div>
@@ -78,7 +78,7 @@ exports[`ClayPanel renders with custom displayTitle 1`] = `
     </button>
     <div
       class="panel-collapse collapse"
-      role="tabpanel"
+      role="region"
     >
       <div
         class="panel-header"
@@ -104,7 +104,7 @@ exports[`ClayPanel renders with different displayType 1`] = `
 <div>
   <div
     class="panel panel-secondary"
-    role="tablist"
+    role="region"
   >
     <div
       class="panel-header"
@@ -139,11 +139,11 @@ exports[`ClayPanel renders with multiple panels 1`] = `
   <div
     aria-orientation="vertical"
     class="panel-group"
-    role="tablist"
+    role="region"
   >
     <div
       class="panel"
-      role="tablist"
+      role="region"
     >
       <div
         class="panel-header"
@@ -162,7 +162,7 @@ exports[`ClayPanel renders with multiple panels 1`] = `
     </div>
     <div
       class="panel"
-      role="tablist"
+      role="region"
     >
       <div
         class="panel-header"
@@ -181,12 +181,12 @@ exports[`ClayPanel renders with multiple panels 1`] = `
     </div>
     <div
       class="panel"
-      role="tablist"
+      role="region"
     >
       <button
         aria-expanded="false"
         class="panel-header panel-header-link collapse-icon collapse-icon-middle collapsed btn btn-unstyled"
-        role="tab"
+        role="button"
         type="button"
       >
         <span
@@ -238,12 +238,12 @@ exports[`ClayPanel renders without displayTitle 1`] = `
 <div>
   <div
     class="panel panel-secondary"
-    role="tablist"
+    role="region"
   >
     <button
       aria-expanded="false"
       class="panel-header panel-header-link collapse-icon collapse-icon-middle collapsed btn btn-unstyled"
-      role="tab"
+      role="button"
       type="button"
     >
       <span

@@ -113,7 +113,7 @@ function ClayPanel({
 			className={classNames('panel', className, {
 				[`panel-${displayType}`]: displayType,
 			})}
-			role="tablist"
+			role="region"
 		>
 			{!collapsable && (
 				<>
@@ -148,7 +148,7 @@ function ClayPanel({
 						)}
 						displayType="unstyled"
 						onClick={() => setInternalExpanded(!internalExpanded)}
-						role="tab"
+						role="button"
 					>
 						{displayTitle &&
 							(React.isValidElement(displayTitle) ? (
@@ -201,7 +201,6 @@ function ClayPanel({
 						onExiting={(element) => {
 							element.style.height = '';
 						}}
-						role="tabpanel"
 						timeout={!prefersReducedMotion ? 250 : 0}
 					>
 						<div>{children}</div>

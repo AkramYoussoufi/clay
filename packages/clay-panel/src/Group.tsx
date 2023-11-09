@@ -58,7 +58,7 @@ const ClayPanelGroup = ({
 				'panel-group-flush': flush,
 				'panel-group-sm': small,
 			})}
-			role="tablist"
+			role="region"
 		>
 			{children}
 		</div>

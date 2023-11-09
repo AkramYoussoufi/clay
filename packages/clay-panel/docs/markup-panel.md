@@ -21,7 +21,7 @@ mainTabURL: 'docs/components/panel.html'
 ## Basic Usage(#css-basic-usage)
 
 <div class="sheet-example">
-	<div class="panel" role="tablist">
+	<div class="panel" role="region">
 		<div class="panel-header">
 			<span class="panel-title">Title</span>
 		</div>
@@ -32,7 +32,7 @@ mainTabURL: 'docs/components/panel.html'
 </div>
 
 ```html
-<div class="panel" role="tablist">
+<div class="panel" role="region">
 	<div class="panel-header">
 		<span class="panel-title">Title</span>
 	</div>
@@ -45,7 +45,7 @@ mainTabURL: 'docs/components/panel.html'
 ### Secondary(#css-panel-secondary)
 
 <div class="sheet-example">
-	<div class="panel panel-secondary" role="tablist">
+	<div class="panel panel-secondary" role="region">
 		<div class="panel-header">
 			<span class="panel-title">Title</span>
 		</div>
@@ -55,7 +55,7 @@ mainTabURL: 'docs/components/panel.html'
 </div>
 
 ```html
-<div class="panel panel-secondary" role="tablist">
+<div class="panel panel-secondary" role="region">
 	<div class="panel-header">
 		<span class="panel-title">Title</span>
 	</div>
@@ -67,7 +67,7 @@ mainTabURL: 'docs/components/panel.html'
 ### Unstyled(#css-panel-unstyled)
 
 <div class="sheet-example">
-	<div class="panel panel-unstyled" role="tablist">
+	<div class="panel panel-unstyled" role="region">
 		<div class="panel-header">
 			<span class="panel-title">Title</span>
 		</div>
@@ -77,7 +77,7 @@ mainTabURL: 'docs/components/panel.html'
 </div>
 
 ```html
-<div class="panel panel-unstyled" role="tablist">
+<div class="panel panel-unstyled" role="region">
 	<div class="panel-header">
 		<span class="panel-title">Title</span>
 	</div>
@@ -95,14 +95,14 @@ Collapsable panels provide you with the ability to expand and collapse content a
 </div>
 
 <div class="sheet-example">
-	<div class="panel" role="tablist">
+	<div class="panel" role="region">
 		<button
 			aria-controls="collapsePanel"
 			aria-expanded="false"
 			class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed"
 			data-target="#collapsablePanel" 
 			data-toggle="collapse"
-			role="tab"
+			role="button"
 		>
 			<span class="panel-title">Toggle me for expanding!</span>
 			<span class="collapse-icon-closed">
@@ -135,14 +135,14 @@ Collapsable panels provide you with the ability to expand and collapse content a
 </div>
 
 ```html
-<div class="panel" role="tablist">
+<div class="panel" role="region">
 	<button
 		aria-controls="collapsePanel"
 		aria-expanded="false"
 		class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed"
 		data-target="#collapsablePanel"
 		data-toggle="collapse"
-		role="tab"
+		role="button"
 	>
 		<span class="panel-title">Toggle me for expanding!</span>
 		<span class="collapse-icon-closed">
@@ -175,9 +175,9 @@ Collapsable panels provide you with the ability to expand and collapse content a
 Grouped panels provide you with the ability of making accordion-like elements with multiple collapsable panels.
 
 <div class="sheet-example">
-	<div aria-orientation="vertical" class="panel-group" role="tablist">
-		<div class="panel panel-secondary" role="tablist">
-			<button aria-controls="collapsePanelOne" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapsePanelOne" data-toggle="collapse" role="tab">
+	<div aria-orientation="vertical" class="panel-group" role="region">
+		<div class="panel panel-secondary" role="region">
+			<button aria-controls="collapsePanelOne" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapsePanelOne" data-toggle="collapse" role="button">
 				<span class="panel-title">One</span>
 				<span class="collapse-icon-closed">
 					<svg class="lexicon-icon lexicon-icon-angle-right" role="presentation">
@@ -194,8 +194,8 @@ Grouped panels provide you with the ability of making accordion-like elements wi
 				<div class="panel-body">Here is some content inside for number One</div>
 			</div>
 		</div>
-		<div class="panel panel-secondary" role="tablist">
-			<button aria-controls="collapsePanelTwo" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapsePanelTwo" data-toggle="collapse" role="tab">
+		<div class="panel panel-secondary" role="region">
+			<button aria-controls="collapsePanelTwo" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapsePanelTwo" data-toggle="collapse" role="button">
 				<span class="panel-title">Two</span>
 				<span class="collapse-icon-closed">
 					<svg class="lexicon-icon lexicon-icon-angle-right" role="presentation">
@@ -212,8 +212,8 @@ Grouped panels provide you with the ability of making accordion-like elements wi
 				<div class="panel-body">Here is some content inside for number Two</div>
 			</div>
 		</div>
-		<div class="panel panel-secondary" role="tablist">
-			<button aria-controls="collapsePanelThree" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapsePanelThree" data-toggle="collapse" role="tab">
+		<div class="panel panel-secondary" role="region">
+			<button aria-controls="collapsePanelThree" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapsePanelThree" data-toggle="collapse" role="button">
 				<span class="panel-title">Three</span>
 				<span class="collapse-icon-closed">
 					<svg class="lexicon-icon lexicon-icon-angle-right" role="presentation">
@@ -234,15 +234,15 @@ Grouped panels provide you with the ability of making accordion-like elements wi
 </div>
 
 ```html
-<div aria-orientation="vertical" class="panel-group" role="tablist">
-	<div class="panel panel-secondary" role="tablist">
+<div aria-orientation="vertical" class="panel-group" role="region">
+	<div class="panel panel-secondary" role="region">
 		<button
 			aria-controls="collapsePanelOne"
 			aria-expanded="false"
 			class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed"
 			data-target="#collapsePanelOne"
 			data-toggle="collapse"
-			role="tab"
+			role="button"
 		>
 			<span class="panel-title">One</span>
 			<span class="collapse-icon-closed">
@@ -272,14 +272,14 @@ Grouped panels provide you with the ability of making accordion-like elements wi
 			</div>
 		</div>
 	</div>
-	<div class="panel panel-secondary" role="tablist">
+	<div class="panel panel-secondary" role="region">
 		<button
 			aria-controls="collapsePanelTwo"
 			aria-expanded="false"
 			class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed"
 			data-target="#collapsePanelTwo"
 			data-toggle="collapse"
-			role="tab"
+			role="button"
 		>
 			<span class="panel-title">Two</span>
 			<span class="collapse-icon-closed">
@@ -309,14 +309,14 @@ Grouped panels provide you with the ability of making accordion-like elements wi
 			</div>
 		</div>
 	</div>
-	<div class="panel panel-secondary" role="tablist">
+	<div class="panel panel-secondary" role="region">
 		<button
 			aria-controls="collapsePanelThree"
 			aria-expanded="false"
 			class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed"
 			data-target="#collapsePanelThree"
 			data-toggle="collapse"
-			role="tab"
+			role="button"
 		>
 			<span class="panel-title">Three</span>
 			<span class="collapse-icon-closed">
@@ -358,9 +358,9 @@ Sometimes you might want to place a panel inside of a card or a sheet, in that c
 		<div class="sheet-header">
 			<h4 class="sheet-title">Sheet Title</h4>
 		</div>
-		<div aria-orientation="vertical" class="panel-group panel-group-flush" role="tablist">
-			<div class="panel panel-unstyled" role="tablist">
-				<button aria-controls="collapseSheetPanelOne" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapseSheetPanelOne" data-toggle="collapse" role="tab">
+		<div aria-orientation="vertical" class="panel-group panel-group-flush" role="region">
+			<div class="panel panel-unstyled" role="region">
+				<button aria-controls="collapseSheetPanelOne" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapseSheetPanelOne" data-toggle="collapse" role="button">
 					<span class="panel-title">One</span>
 					<span class="collapse-icon-closed">
 						<svg class="lexicon-icon lexicon-icon-angle-right" role="presentation">
@@ -377,8 +377,8 @@ Sometimes you might want to place a panel inside of a card or a sheet, in that c
 					<div class="panel-body">Here is some content inside for number One</div>
 				</div>
 			</div>
-			<div class="panel panel-unstyled" role="tablist">
-				<button aria-controls="collapseSheetPanelTwo" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapseSheetPanelTwo" data-toggle="collapse" role="tab">
+			<div class="panel panel-unstyled" role="region">
+				<button aria-controls="collapseSheetPanelTwo" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapseSheetPanelTwo" data-toggle="collapse" role="button">
 					<span class="panel-title">Two</span>
 					<span class="collapse-icon-closed">
 						<svg class="lexicon-icon lexicon-icon-angle-right" role="presentation">
@@ -395,8 +395,8 @@ Sometimes you might want to place a panel inside of a card or a sheet, in that c
 					<div class="panel-body">Here is some content inside for number Two</div>
 				</div>
 			</div>
-			<div class="panel panel-unstyled" role="tablist">
-				<button aria-controls="collapseSheetPanelThree" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapseSheetPanelThree" data-toggle="collapse" role="tab">
+			<div class="panel panel-unstyled" role="region">
+				<button aria-controls="collapseSheetPanelThree" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapseSheetPanelThree" data-toggle="collapse" role="button">
 					<span class="panel-title">Three</span>
 					<span class="collapse-icon-closed">
 						<svg class="lexicon-icon lexicon-icon-angle-right" role="presentation">
@@ -425,16 +425,16 @@ Sometimes you might want to place a panel inside of a card or a sheet, in that c
 	<div
 		aria-orientation="vertical"
 		class="panel-group panel-group-flush"
-		role="tablist"
+		role="region"
 	>
-		<div class="panel panel-unstyled" role="tablist">
+		<div class="panel panel-unstyled" role="region">
 			<button
 				aria-controls="collapseSheetPanelOne"
 				aria-expanded="false"
 				class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed"
 				data-target="#collapseSheetPanelOne"
 				data-toggle="collapse"
-				role="tab"
+				role="button"
 			>
 				<span class="panel-title">One</span>
 				<span class="collapse-icon-closed">
@@ -468,14 +468,14 @@ Sometimes you might want to place a panel inside of a card or a sheet, in that c
 				</div>
 			</div>
 		</div>
-		<div class="panel panel-unstyled" role="tablist">
+		<div class="panel panel-unstyled" role="region">
 			<button
 				aria-controls="collapseSheetPanelTwo"
 				aria-expanded="false"
 				class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed"
 				data-target="#collapseSheetPanelTwo"
 				data-toggle="collapse"
-				role="tab"
+				role="button"
 			>
 				<span class="panel-title">Two</span>
 				<span class="collapse-icon-closed">
@@ -509,14 +509,14 @@ Sometimes you might want to place a panel inside of a card or a sheet, in that c
 				</div>
 			</div>
 		</div>
-		<div class="panel panel-unstyled" role="tablist">
+		<div class="panel panel-unstyled" role="region">
 			<button
 				aria-controls="collapseSheetPanelThree"
 				aria-expanded="false"
 				class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed"
 				data-target="#collapseSheetPanelThree"
 				data-toggle="collapse"
-				role="tab"
+				role="button"
 			>
 				<span class="panel-title">Three</span>
 				<span class="collapse-icon-closed">
@@ -559,8 +559,8 @@ Sometimes you might want to place a panel inside of a card or a sheet, in that c
 Sometimes you want to have some custom content that's not a string or a number in your title, that's where `ClayPanel.Title` comes in handy. It allows you to add custom content to the title of the panel as seen in this example using `ClayLabels`.
 
 <div class="sheet-example">
-	<div class="panel panel-secondary" role="tablist">
-		<button aria-controls="panelWithCustomTitle" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapsePanelWithCustomTitle" data-toggle="collapse" role="tab">
+	<div class="panel panel-secondary" role="region">
+		<button aria-controls="panelWithCustomTitle" aria-expanded="false" class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed" data-target="#collapsePanelWithCustomTitle" data-toggle="collapse" role="button">
 			<div>
 				<h3>Title</h3>
 				<span>If field </span>
@@ -597,14 +597,14 @@ Sometimes you want to have some custom content that's not a string or a number i
 </div>
 
 ```html
-<div class="panel panel-secondary" role="tablist">
+<div class="panel panel-secondary" role="region">
 	<button
 		aria-controls="panelWithCustomTitle"
 		aria-expanded="false"
 		class="btn btn-unstyled panel-header panel-header-link collapse-icon collapse-icon-middle collapsed"
 		data-target="#collapsePanelWithCustomTitle"
 		data-toggle="collapse"
-		role="tab"
+		role="button"
 	>
 		<div>
 			<h3>Title</h3>
